@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+      text-decoration: none;
+    font-family: 'Josh',cursive;
+}
+
+  header{
+    position: fixed ;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+  }
+  .logo img{
+    max-width: 100px ;
+    height: 50px;
+    border-radius: 34px;
+  }
+  .navmenu{
+    display: flex;
+  }
+  .navmenu a{
+    color: grey;
+    font-size: 14px;
+    text-transform: capitalize;
+padding: 10px 20px;  
+font-weight: 400;
+transition: all .42s ease;
+}
+.navmenu a:hover{
+    color: rgb(156, 212, 243);
+font-size: 15px; 
+}
+.nav-icon{
+    display: flex;
+align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color:grey;
+    font-size: 25px;
+    font-weight: 40px;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: blueviolet;
+}
+#menu-icon{
+font-size: 35px;
+color: rgb(255,255,255);
+z-index: 100000;
+cursor: pointer;
+}
+section{
+    padding: 5% 10%;
+
+
+}
+.main-home {
+    color: aliceblue;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/sufi1.png);
+background-position: center;
+display: grid;
+grid-template-columns: repeat(1,1fr);
+/* background-size: cover; */
+align-items: center;
+}
+.main-text h5{
+  color: azure;
+     font-size: 55px;
+     text-transform: capitalize;
+     font-weight: 600;
+     line-height: 1.1;
+     margin: 6px 0 60px;
+}
+.main-btn{
+    display: inline;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid skyblue;
+    padding: 12px 25px;
+    margin: 10px 0 10px 0;
+    transition: all .42s ease;
+    border-radius: 34px;
+}
+.main-btn:hover{
+    color: skyblue;
+    background-color: white;
+}
+.main-btn i{vertical-align: middle;}
+header.sticky{
+  background-color: rgb(188, 162, 242);
+  padding: 20px 10%;
+  box-shadow: 0px 0px 10px black;
+}
+.class-text h2{
+  color: black;
+  font-size: 28px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.product{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,auto));
+gap: 2rem;
+margin: 20px 10%;
+}
+.row{
+  position: relative;
+ transition: all .40s;
+}
+.row img{
+  width: 100%;
+  height: auto;
+  transition: all 0.42s ease;
+}
+.row img:hover{
+  transform: scale(0.9);
+}
+.product-text h5{
+  position: absolute;
+  top: 13px;
+  left: 13px;
+color: black;
+font-size: 12px;
+font-weight: 500;
+text-transform: capitalize;
+background-color: rgba(0, 0, 0, 0.05);
+padding: 3px 10px;
+border-radius: 8px;
+}
+.heart-icon{
+
+  position: absolute;
+  right: 0;
+  font-size: 20px;}
+  .heart-icon:hover{
+    color: red;
+  }
+.ratting{
+  color: rgb(239, 160, 42);
+  font-size: 18px;
+}
+.contact{
+  height: 50vh;
+  width: 100vw;
+  background-color: rgb(240, 190, 214);
+border-radius: 18px;
+  align-items: center;
+  justify-content: center;
+}
+.contactt{
+  font-size: 40px;
+  text-align: center;
+padding :10px 10px 50px 10px;
+position: relative;
+}
+.icon1{
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+.icon1 a{
+  padding: 10px 120px 10px 120px;
+
+}
+.icon1 a img{
+  height: 34px;
+  border-radius: 8px;
+}
+.insta{
+  border-right: 2px solid grey;
+}
+.icon1 a:hover{
+  transform: scale(1.1); 
+  transition: all 0.43s ease;
+
+}
+.end-text{
+  
+  text-align: center;
+  padding: 20px;
+}
+@media(max-width:890px){
+  header{
+    padding: 20px 3% ;
+    transition: .3s;
+  }
+}
+@media(max-width:630px){
+  .main-text h1{
+font-size: 50px;
+transition: 0.3;
+  }
+}
+@media(max-width:750px){
+  .navmenu{
+    position: absolute;
+    top: 100%;
+  right: -100%;
+  width: 300px;
+  height: 130vh;
+  background: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 30px;
+  transition: all 0.42s ease;
+  }
+  .navmenu a{
+    display: block;
+    margin: 18px 0;
+  }
+  .navmenu.open{
+    right: 0;
+
+  }
+}
